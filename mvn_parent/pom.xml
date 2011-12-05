@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <prerequisites>
+    <maven>3.0</maven>
+  </prerequisites>
+
+  <groupId>at.kvas.tutorial.tycho</groupId>
+  <artifactId>at.kvas.tutorial.tycho-parent</artifactId>
+  <version>0.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>at.kvas.tutorial.tycho</name>
+
+  <properties>
+    <tycho-version>0.13.0</tycho-version>
+    <workspace_loc>/home/gernot/workspaces/tycho/</workspace_loc>
+  </properties>
+  
+  <modules>
+	<module>../mvn_tools</module>
+	<module>../mvn_wms</module>
+	<module>../mvn_ui</module>
+    <module>../mvn_rcp</module>
+	<module>../at.kvas.tutorial.tycho.feature</module>
+	<module>../at.kvas.tutorial.tycho.updatesite</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>eclipse-indigo</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/indigo</url>
+    </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+	<plugin>
+		<groupId>org.eclipse.tycho</groupId>
+		<artifactId>target-platform-configuration</artifactId>
+		<version>${tycho-version}</version>
+		<configuration>
+			<resolver>p2</resolver>
+		</configuration>
+	</plugin>
+   </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>maven-osgi-compiler-plugin</artifactId>
+          <version>${tycho-version}</version>
+          <configuration>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.4.1</version>
+          <configuration>
+            <encoding>ISO-8859-1</encoding>
+          </configuration>
+        </plugin>
+    		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>findbugs-maven-plugin</artifactId>
+			<version>2.3</version>
+			<configuration>
+				<findbugsXmlOutput>true</findbugsXmlOutput>
+				<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+				<xmlOutput>true</xmlOutput>
+			</configuration>
+		</plugin>		
+      </plugins>
+    </pluginManagement>
+  	<sourceDirectory>src</sourceDirectory>
+  </build>
+</project>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/at.kvas.tutorial.tycho.feature_1.0.0.qualifier.jar" id="at.kvas.tutorial.tycho.feature" version="1.0.0.qualifier">
+      <category name="at.kvas.tutorial.tycho"/>
+   </feature>
+   <category-def name="at.kvas.tutorial.tycho" label="at.kvas.tutorial.tycho"/>
+</site>

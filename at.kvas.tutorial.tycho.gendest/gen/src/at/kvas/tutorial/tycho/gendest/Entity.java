@@ -1,0 +1,1 @@
+package at.kvas.tutorial.tycho.gendest;public class Entity {public String test() { return "Test"; }}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="at.kvas.tutorial.tycho.rcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="at.kvas.tutorial.tycho.rcp.Perspective"
+            id="at.kvas.tutorial.tycho.rcp.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="View"
+            class="at.kvas.tutorial.tycho.rcp.View"
+            id="at.kvas.tutorial.tycho.rcp.view">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               standalone="true"
+               minimized="false"
+               relative="org.eclipse.ui.editorss"
+               relationship="left"
+               id="at.kvas.tutorial.tycho.rcp.view">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         id="at_kvas_tutorial_tycho_rcp_product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="at.kvas.tutorial.tycho.rcp.plugin.application"
+            name="RCP Example Product">
+      </product>
+   </extension>
+
+</plugin>

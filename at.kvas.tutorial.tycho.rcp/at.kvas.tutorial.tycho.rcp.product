@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="RCP Example Product" uid="at.kvas.tutorial.tychp.rcp.product" id="at.kvas.tutorial.tycho.rcp.plugin.at_kvas_tutorial_tycho_rcp_product" application="at.kvas.tutorial.tycho.rcp.plugin.application" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="at.kvas.tutorial.tycho.rcp.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.rcp" version="3.7.1.r37x_v20110729-9DB5FmNFnFLSFCtLxnRfMqt15A4A"/>
+   </features>
+
+
+</product>

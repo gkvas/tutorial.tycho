@@ -1,0 +1,21 @@
+<project name="CodeGen" default="run">
+
+	<fail unless="workspace_loc">Workspace not set</fail>
+	
+	<target name="run">
+		
+		<echo message="${basedir}" />
+		<echo message="${workspace_loc}" />
+
+		<java classname="at.kvas.tutorial.tycho.codegen.CodeGen" 
+			  fork="true"
+	          failonerror="true">
+			
+			<classpath>
+				<pathelement path="${workspace_loc}/at.kvas.tutorial.tycho.codegen/target/classes" />
+			</classpath>
+		</java>
+		
+	</target>
+
+</project>
