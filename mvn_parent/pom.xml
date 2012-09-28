@@ -17,7 +17,7 @@
   <name>at.kvas.tutorial.tycho</name>
 
   <properties>
-    <tycho-version>0.13.0</tycho-version>
+    <tycho-version>0.15.0</tycho-version>
     <workspace_loc>/home/gernot/git/tutorial.tycho/</workspace_loc>
   </properties>
   
