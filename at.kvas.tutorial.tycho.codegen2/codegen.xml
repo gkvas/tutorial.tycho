@@ -14,6 +14,7 @@
 			<classpath>
 				<pathelement path="${workspace_loc}/at.kvas.tutorial.tycho.codegen2/target/classes" />
 			</classpath>
+			<arg value ="${workspace_loc}/at.kvas.tutorial.tycho.gendest2/gen/src/at/kvas/tutorial/tycho/gendest2/" />
 		</java>
 		
 	</target>

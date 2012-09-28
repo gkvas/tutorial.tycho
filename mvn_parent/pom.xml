@@ -18,7 +18,7 @@
 
   <properties>
     <tycho-version>0.13.0</tycho-version>
-    <workspace_loc>/home/gernot/workspaces/tycho/</workspace_loc>
+    <workspace_loc>/home/gernot/git/tutorial.tycho/</workspace_loc>
   </properties>
   
   <modules>

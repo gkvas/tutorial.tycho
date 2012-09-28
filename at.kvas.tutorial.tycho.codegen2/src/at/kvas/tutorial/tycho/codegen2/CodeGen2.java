@@ -9,7 +9,7 @@ public class CodeGen2 {
 
 	public static void main(String[] args) throws IOException {
 
-		String dest = "/home/gernot/workspaces/tycho/at.kvas.tutorial.tycho.gendest2/gen/src/at/kvas/tutorial/tycho/gendest2/";
+		String dest = args[0];
 
 		new File(dest).mkdirs();
 
