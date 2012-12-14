@@ -23,7 +23,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-packaging-plugin</artifactId>
-        <version>0.15.0</version>
+        <version>0.16.0</version>
         <configuration>
           <environments>
             <environment>

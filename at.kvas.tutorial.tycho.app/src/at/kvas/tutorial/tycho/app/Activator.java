@@ -28,7 +28,7 @@ public class Activator implements BundleActivator, ServiceListener {
 		fContext = context;
 		service = new DictionaryServiceImpl();
 
-		Hashtable props = new Hashtable();
+		Hashtable<String, ?> props = new Hashtable<String, Object>();
 		// register the service
 		context.registerService(DictionaryService.class.getName(), service,
 				props);

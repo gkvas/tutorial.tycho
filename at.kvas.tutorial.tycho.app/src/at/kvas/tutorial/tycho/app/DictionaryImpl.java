@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DictionaryImpl implements Dictionary {
 
-	private List fWords = new ArrayList(Arrays.asList("osgi", "eclipse", "equinox"));
+	private List<String> fWords = new ArrayList<String>(Arrays.asList("osgi", "eclipse", "equinox"));
 	private String fLanguage = "en_US";
 	
 	public String getLanguage() {

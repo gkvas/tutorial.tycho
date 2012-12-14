@@ -3,7 +3,7 @@
 <plugin>
 
    <extension
-         id="application"
+         id="at.kvas.tutorial.tycho.rcp.plugin.application"
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
@@ -55,6 +55,18 @@
    </extension>
    <extension
          id="at_kvas_tutorial_tycho_rcp_product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="at.kvas.tutorial.tycho.rcp.plugin.application"
+            name="RCP Example Product">
+         <property
+               name="appName"
+               value="RCP Example Product">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="at_kvas_tutorial_tycho_rcp_plugin"
          point="org.eclipse.core.runtime.products">
       <product
             application="at.kvas.tutorial.tycho.rcp.plugin.application"
