@@ -8,11 +8,11 @@
     <version>0.0.0</version>
     <relativePath>../mvn_parent/pom.xml</relativePath>
   </parent>
-  <groupId>at.kvas.tutorial.tycho-wms</groupId>
-  <artifactId>at.kvas.tutorial.tycho-wms</artifactId>
+  <groupId>at.kvas.tutorial.tycho-stage1</groupId>
+  <artifactId>at.kvas.tutorial.tycho-stage1</artifactId>
   <version>0.0.0</version>
   <packaging>pom</packaging>
-  <name>at.kvas.tutorial.tycho-wms</name>
+  <name>at.kvas.tutorial.tycho-stage1</name>
   <modules>
     <module>../at.kvas.tutorial.tycho.app</module>
     <module>../at.kvas.tutorial.tycho.gendest</module>

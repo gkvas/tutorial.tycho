@@ -4,12 +4,12 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>at.kvas.tutorial.tycho-wms</artifactId>
-		<groupId>at.kvas.tutorial.tycho-wms</groupId>
+		<artifactId>at.kvas.tutorial.tycho-stage1</artifactId>
+		<groupId>at.kvas.tutorial.tycho-stage1</groupId>
 		<version>0.0.0</version>
-		<relativePath>../mvn_wms</relativePath>
+		<relativePath>../mvn_stage1</relativePath>
 	</parent>
-	<groupId>at.kvas.tutorial.tycho-wms</groupId>
+	<groupId>at.kvas.tutorial.tycho-stage1</groupId>
 	<artifactId>at.kvas.tutorial.tycho.gendest</artifactId>
 	<version>1.0.0.qualifier</version>
 	<packaging>eclipse-plugin</packaging>

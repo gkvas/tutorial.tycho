@@ -23,8 +23,8 @@
   
   <modules>
 	<module>../mvn_tools</module>
-	<module>../mvn_wms</module>
-	<module>../mvn_ui</module>
+	<module>../mvn_stage1</module>
+	<module>../mvn_stage2</module>
     <module>../mvn_rcp</module>
 	<module>../at.kvas.tutorial.tycho.feature</module>
 	<module>../at.kvas.tutorial.tycho.updatesite</module>
