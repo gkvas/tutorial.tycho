@@ -17,6 +17,8 @@
     <module>../at.kvas.tutorial.tycho.rcp.plugin</module>
     <module>../at.kvas.tutorial.tycho.rcp.feature</module>
     <module>../at.kvas.tutorial.tycho.rcp</module>
+    <module>../at.kvas.tutorial.tycho.rcp.fragment.win32_x86</module>
+    <module>../at.kvas.tutorial.tycho.rcp.fragment.linux_x86_64</module>
   </modules>
   <build>
     <plugins>

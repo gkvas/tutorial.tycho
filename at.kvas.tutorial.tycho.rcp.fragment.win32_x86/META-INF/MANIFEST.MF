@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Win32_x86
+Bundle-SymbolicName: at.kvas.tutorial.tycho.rcp.fragment.win32_x86
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: at.kvas.tutorial.tycho.rcp.plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-PlatformFilter: (& (osgi.os=win32)(osgi.ws=win32)(osgi.arch=x86))
