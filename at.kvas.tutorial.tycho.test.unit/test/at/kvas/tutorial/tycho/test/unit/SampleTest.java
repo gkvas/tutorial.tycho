@@ -2,7 +2,7 @@ package at.kvas.tutorial.tycho.test.unit;
 
 import org.junit.Assert;
 
-public class Test {
+public class SampleTest {
 	
 	@org.junit.Test
 	public void testNegate() {
