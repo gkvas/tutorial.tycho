@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Optional
+Bundle-SymbolicName: at.kvas.tutorial.tycho.rcp.optional
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: at.kvas.tutorial.tycho.rcp.optional.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui;resolution:=optional;visibility:=reexport,
+ org.eclipse.rap.ui;resolution:=optional;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: at.kvas.tutorial.tycho.rcp.optional

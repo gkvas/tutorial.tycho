@@ -6,6 +6,8 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.PlatformUI;
 
+import at.kvas.tutorial.tycho.rcp.optional.NotReallyOptional;
+
 /**
  * This class controls all aspects of the application's execution
  */
@@ -15,6 +17,10 @@ public class Application implements IApplication {
 	 * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext)
 	 */
 	public Object start(IApplicationContext context) {
+		
+		NotReallyOptional nro = new NotReallyOptional();
+		nro.toString();		
+	
 		Display display = PlatformUI.createDisplay();
 		try {
 			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
