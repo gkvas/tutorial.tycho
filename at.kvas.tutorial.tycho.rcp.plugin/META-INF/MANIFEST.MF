@@ -5,6 +5,6 @@ Bundle-SymbolicName: at.kvas.tutorial.tycho.rcp.plugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: at.kvas.tutorial.tycho.rcp.Activator
 Require-Bundle: org.eclipse.core.runtime,
- at.kvas.tutorial.tycho.rcp.optional
+ at.kvas.tutorial.tycho.rcp.compatibility
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
