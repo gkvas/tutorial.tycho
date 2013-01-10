@@ -24,7 +24,7 @@
          unpack="false"/>
          
    <plugin
-         id="at.kvas.tutorial.tycho.rcp.optional"
+         id="at.kvas.tutorial.tycho.rcp.compatibility"
          download-size="0"
          install-size="0"
          version="0.0.0"
