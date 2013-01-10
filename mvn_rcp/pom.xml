@@ -19,7 +19,7 @@
     <module>../at.kvas.tutorial.tycho.rcp</module>
     <module>../at.kvas.tutorial.tycho.rcp.fragment.win32_x86</module>
     <module>../at.kvas.tutorial.tycho.rcp.fragment.linux_x86_64</module>
-    <module>../at.kvas.tutorial.tycho.rcp.optional</module>
+    <module>../at.kvas.tutorial.tycho.rcp.compatibility</module>
   </modules>
   <build>
     <plugins>
